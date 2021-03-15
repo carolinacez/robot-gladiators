@@ -1,4 +1,5 @@
 
+window.alert("This is an alert! JavaScript is running!"); 
 // // Game States
 // // "WIN" - Player robot has defeated all enemy robots
 // //    * Fight all enemy robots
