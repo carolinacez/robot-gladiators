@@ -21,7 +21,8 @@ var fight = function() {
 
   //Subtract the value of 'enemyAttack' from the value of 'playerHealth 
   //and use that result to update the value in the 'playerHealth' variable.
-  playerHealth = playerHealth - enemyAttack; 
+  
+  playerHealth = playerHealth - enemyAttack;
 
   //Log a resulting message to the console so we know that it worked.
   console.log(enemyName + " attacked" + playerName + ". " + playerName + " now has " +playerHealth+ " health remaining.") 
