@@ -51,7 +51,7 @@ var fight = function() {
   } else if (promptFight === "skip" || promptFight === "SKIP") {
     window.alert(playerName + " has chosen to skip the fight!"); 
   } else { 
-    window.alert("You need to choose a valid option. Try again!")
+    window.alert("You need to choose a valid option. Try again")
   }
 }; 
 
