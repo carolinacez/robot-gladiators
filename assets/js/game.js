@@ -58,7 +58,7 @@ var fight = function() {
       window.alert(playerName + "  has decided to skip this fight. Goodbye!"); 
       //subtract money from playerMoney for skipping 
       playerMoney = playerMoney - 2; 
-      console.log(playerMoney);
+      console.log("this is the playermoney = " + playerMoney);
     }
   } 
   // if no (false), ask question again by running fight() again 
