@@ -12,7 +12,7 @@ var playerMoney = 10;
 
 console.log(playerName, playerAttack, playerHealth); 
 
-var enemyName = "Roborto"; 
+var enemyName = ["Roborto", "Amy Android", "Robo Trumble"]; 
 var enemyHealth = 50; 
 var enemyAttack = 12; 
 
@@ -74,7 +74,7 @@ var fight = function() {
   }
 }; 
 
-fight(); 
+// fight(); 
 
 // window.alert("This is an alert! JavaScript is running!"); 
 // // Game States
