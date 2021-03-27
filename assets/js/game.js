@@ -14,13 +14,11 @@ console.log(playerName, playerAttack, playerHealth);
 
 var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
 console.log(enemyNames.length); 
-for(var i = 0; i< enemyNames.length; i++) {
-  console.log(enemyNames[i]);
-}
+
 var enemyHealth = 50; 
 var enemyAttack = 12; 
 
-var fight = function() { 
+var fight = function(enemyName) { 
   
   window.alert("Welcome to Robot Gladiators!");
 
@@ -78,6 +76,9 @@ var fight = function() {
   }
 }; 
 
+for(var i = 0; i< enemyNames.length; i++) {
+ fight(enemyNames[i]);
+}
 // fight(); 
 
 // window.alert("This is an alert! JavaScript is running!"); 
