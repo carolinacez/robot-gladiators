@@ -19,10 +19,10 @@ var enemyHealth = 50;
 var enemyAttack = 12; 
 
 var fight = function(enemyName) { 
-  
-  window.alert("Welcome to Robot Gladiators!");
 
-  var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose");
+  while(enemyHealth > 0) {
+    
+    var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose");
   console.log(promptFight); 
 
   //if player choses to fight, the fight 
@@ -74,6 +74,7 @@ var fight = function(enemyName) {
   else { 
     fight(); 
   }
+}
 }; 
 
 //for loop to be able to play different enemies
