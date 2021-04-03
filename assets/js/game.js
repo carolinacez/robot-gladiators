@@ -20,7 +20,7 @@ var enemyAttack = 12;
 
 var fight = function(enemyName) { 
 
-  while(enemyHealth > 0) {
+  while(enemyHealth > 0 && playerHealth > 0) {
     
     var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose");
   console.log(promptFight); 
