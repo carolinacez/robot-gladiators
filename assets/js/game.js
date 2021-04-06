@@ -69,6 +69,7 @@ var fight = function(enemyName) {
       //subtract money from playerMoney for skipping 
       playerMoney = playerMoney - 10; 
       console.log("playerMoney" + playerMoney);
+      break;
     }
   } 
   // if no (false), ask question again by running fight() again 
