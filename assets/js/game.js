@@ -30,13 +30,28 @@ var fight = function(enemyName) {
       //remove enemy's health by subtracting the amount se in the playerAttack variable 
       //Subtract the value of 'playerAttack' from the value of 'enemyHealth' 
       //and use that result to update the value in the 'enemyHealth' variable. 
-      enemyHealth = enemyHealth - playerAttack; 
+      
+      var confirmSkip = window.confirm("Are you sure you'd like to quit?");
 
       //Log a resulting message to the console so we know that it worked. 
+      
+      
+    //if yes (true), leave fight 
+    if (confirmSkip) {
+      window.alert(playerName + "  has decided to skip this fight. Goodbye!"); 
+      //subtract money from playerMoney for skipping 
+      playerMoney = playerMoney - 10; 
+      console.log("playerMoney" + playerMoney);
+      break;
+    }
+      enemyHealth = enemyHealth - playerAttack; 
       console.log(playerName + " attacked " + enemyName + ". " + enemyName + " now has "+ enemyHealth + " health remaining."); 
       //check enemy's health 
       if (enemyHealth <= 0) {
         window.alert(enemyName + " has died!");
+
+        //award player money for winning
+        playerMoney = playerMoney + 20; 
       } 
       else {
       window.alert(enemyName + " still has " + enemyHealth + " health left.");
@@ -63,14 +78,7 @@ var fight = function(enemyName) {
     //confirm player wants to skip 
     var confirmSkip = window.confirm("Are you sure you'd like to quit?"); 
 
-    //if yes (true), leave fight 
-    if (confirmSkip) {
-      window.alert(playerName + "  has decided to skip this fight. Goodbye!"); 
-      //subtract money from playerMoney for skipping 
-      playerMoney = playerMoney - 10; 
-      console.log("playerMoney" + playerMoney);
-      break;
-    }
+
   } 
   // if no (false), ask question again by running fight() again 
   else { 
