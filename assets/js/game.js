@@ -52,6 +52,9 @@ var fight = function(enemyName) {
 
         //award player money for winning
         playerMoney = playerMoney + 20; 
+
+        //leave while() loop sinfe enemy is dead
+        break;
       } 
       else {
       window.alert(enemyName + " still has " + enemyHealth + " health left.");
