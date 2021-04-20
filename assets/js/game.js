@@ -112,6 +112,10 @@ for(var i = 0; i< enemyNames.length; i++) {
   break;
 }
 }
+
+var startGame = function () {
+  
+}
 // fight(); 
 
 // window.alert("This is an alert! JavaScript is running!"); 
