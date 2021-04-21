@@ -114,7 +114,13 @@ for(var i = 0; i< enemyNames.length; i++) {
 }
 
 var startGame = function () {
-  
+playerHealth = 100;
+playerAttack = 10;
+playerMoney = 10;
+
+for(var i = 0;  i < enemyNames.length; i++ ) {
+
+}
 }
 // fight(); 
 
